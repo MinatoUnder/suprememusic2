@@ -24,6 +24,12 @@ const prefix = "2";
 /////////////////////////
 ////////////////////////
 
+client.on('ready',async () => { client.channels.find(ch => ch.id === "514193447234830353" && ch.type === 'voice').join(); });
+
+
+
+
+
 client.on('message', async msg =>{
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
